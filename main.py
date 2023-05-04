@@ -55,3 +55,22 @@
 #   print('number', num, 'is perfect\n')
 # else:
 #   print('number', num, 'is not perfect\n')
+
+
+# # TASK 5
+# #Проверить являются ли числа А и В взаимнопростыми.
+# numA = int(input('Please, enter the positive num A\n'))
+# numB = int(input('Please, enter the positive num B\n'))
+# divider = 1
+# sumDividers = 0
+
+# while divider <= numA:
+#   if numA % divider == 0 and numB % divider == 0:
+#     print(divider)
+#     sumDividers += divider
+#   divider += 1
+
+# if sumDividers == 1:
+#   print('numbers', numA, 'and', numB, 'are coprime\n')
+# else: 
+#   print('numbers', numA, 'and', numB, 'are not coprime\n')
