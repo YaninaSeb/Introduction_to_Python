@@ -18,3 +18,20 @@
 #   num //= 10
 # sum += num
 # print('The sum of the digits of a number', sum, '\n')
+
+# # TASK 3
+# #Номер билета состоит из 7 цифр. Проверить является ли билет счастливым (цифры слева-направо и справа-налево стоят в одинаковом порядке)
+# num = int(input('Please, enter the number\n'))
+# currentNum = num
+# newNum = 0
+
+# while currentNum > 10:
+#   newNum = newNum * 10 + currentNum % 10
+#   currentNum //= 10
+
+# newNum = newNum * 10 + currentNum % 10
+
+# if newNum == num:
+#   print('This ticket is lucky\n')
+# else:
+#   print('This ticket is not lucky\n')
