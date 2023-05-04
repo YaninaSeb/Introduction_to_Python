@@ -35,3 +35,23 @@
 #   print('This ticket is lucky\n')
 # else:
 #   print('This ticket is not lucky\n')
+
+
+# # TASK 4
+# #Проверить является ли число N совершенным
+# num = int(input('Please, enter the number\n'))
+# divider = 1
+# sumDividers = 0
+
+# if num <= 0:
+#   print('number', num, 'is not perfect\n')
+
+# while divider <= num / 2:
+#   if num % divider == 0:
+#     sumDividers += divider
+#   divider += 1
+
+# if sumDividers == num:
+#   print('number', num, 'is perfect\n')
+# else:
+#   print('number', num, 'is not perfect\n')
