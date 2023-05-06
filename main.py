@@ -74,3 +74,20 @@
 #   print('numbers', numA, 'and', numB, 'are coprime\n')
 # else: 
 #   print('numbers', numA, 'and', numB, 'are not coprime\n')
+
+
+# # TASK 6
+# #Представить десятичное целое число в двоичном виде
+# print('Please, enter a decimal number:')
+# num = int(input())
+# binaryNum = ''
+
+# def changeIntPart(n):
+#   intPart = ''
+#   while n > 0:
+#     intPart = str(n % 2) + intPart
+#     n = n // 2
+#   return intPart
+
+# binaryNum = changeIntPart(num) or 0
+# print('Decimal number', num, 'in binary is', binaryNum)
