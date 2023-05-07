@@ -91,3 +91,22 @@
 
 # binaryNum = changeIntPart(num) or 0
 # print('Decimal number', num, 'in binary is', binaryNum)
+
+
+# # TASK 11
+# #Бактерии бывают двух видов - черные и белые. Черная бактерия за каждый такт делится на 2 черные и 1 белую, белая - на 1 черную и 1 белую. Выяснить сколько бактерий каждого вида будет после T тактов, если на первом такте было А - белых и В - черных .
+# countWhite = int(input('Please, enter the number of white bacteria: '))
+# countBlack = int(input('Please, enter the number of black bacteria: '))
+# countTakt = int(input('Please, enter the number of takt: '))
+
+# def changeCount(countW, countB, takt):
+#   if takt == countTakt:
+#     return countW, countB
+#   else:
+#     newCountW = countW + countB
+#     newCountB = countW + countB * 2
+#     takt += 1
+#     return changeCount(newCountW, newCountB, takt)
+
+# countWhite, countBlack = changeCount(countWhite, countBlack, 1)
+# print('After', countTakt, "cycles the number of white bacteria is", countWhite, ',the number of black bacteria is', countBlack)
