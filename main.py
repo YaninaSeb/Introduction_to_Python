@@ -59,21 +59,20 @@
 
 # # TASK 5
 # #Проверить являются ли числа А и В взаимнопростыми.
-# numA = int(input('Please, enter the positive num A\n'))
-# numB = int(input('Please, enter the positive num B\n'))
+# numA = int(input('Please, enter the positive number A: '))
+# numB = int(input('Please, enter the positive number B: '))
 # divider = 1
 # sumDividers = 0
 
 # while divider <= numA:
 #   if numA % divider == 0 and numB % divider == 0:
-#     print(divider)
 #     sumDividers += divider
 #   divider += 1
 
 # if sumDividers == 1:
-#   print('numbers', numA, 'and', numB, 'are coprime\n')
+#   print('Numbers', numA, 'and', numB, 'are coprime')
 # else: 
-#   print('numbers', numA, 'and', numB, 'are not coprime\n')
+#   print('Numbers', numA, 'and', numB, 'are not coprime')
 
 
 # # TASK 6
