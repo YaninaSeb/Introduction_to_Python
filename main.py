@@ -77,19 +77,25 @@
 
 # # TASK 6
 # #Представить десятичное целое число в двоичном виде
-# print('Please, enter a decimal number:')
-# num = int(input())
-# binaryNum = ''
+# try:
+#   num = int(input('Please, enter a decimal number: '))
+  
+#   def changeNum(n):
+#     if n == 0: 
+#       return 0
+#     else: 
+#       binary = ''
+#       while n > 0:
+#         binary = str(n % 2) + binary
+#         n = n // 2
+#       return int(binary)
 
-# def changeIntPart(n):
-#   intPart = ''
-#   while n > 0:
-#     intPart = str(n % 2) + intPart
-#     n = n // 2
-#   return intPart
+#   binaryNum = changeNum(abs(num))
+#   if num < 0: binaryNum = -binaryNum
+#   print('Decimal number', num, 'in binary is', binaryNum)
 
-# binaryNum = changeIntPart(num) or 0
-# print('Decimal number', num, 'in binary is', binaryNum)
+# except ValueError:
+#   print('The entered data is incorrect')
 
 
 # # TASK 11
