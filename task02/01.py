@@ -5,7 +5,7 @@ def getMinNumInd(lst):
   for n in lst:
     if n < minNum: minNum = n
   return lst.index(minNum)
-
+  
 def getMaxNumInd(lst):
   maxNum = lst[0]
   for n in lst:
@@ -14,8 +14,11 @@ def getMaxNumInd(lst):
 
 def getAverage(lst):
   sum = 0
-  for n in lst: sum += n
-  return sum / len(lst)
+  if len(lst) == 0:
+    return 0
+  else:
+    for n in lst: sum += n
+    return sum / len(lst)
 
 def averageValue(list):
   minNumInd = getMinNumInd(list)
@@ -25,11 +28,9 @@ def averageValue(list):
     minNumInd, maxNumInd = maxNumInd, minNumInd
 
   average = getAverage(nums[minNumInd+1:maxNumInd])
-
-  return average
-
+  
+  print('Average value between the first maximum number and the first minimum number is', average) 
 
 # example
-nums = [1, 8, 2, 4, 6, 8, 3, 10, -2, 1, 0]
-
-print('Average value between the first maximum number and the first minimum number is', averageValue(nums))
+nums = [1, 8, 2, 4, 6, 8, 3, 10, 2, 1, 0]
+averageValue(nums)
